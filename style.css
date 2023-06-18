@@ -1,5 +1,31 @@
 /* Write your CSS here! */
+div {
+  display: grid;
+  grid-template-columns: repeat(1fr,4);
+  grid-template-areas: 
+  "h h h h"
+  "s m m m"
+  "f f f f";
+}
 
+.header {
+  grid-area: h;
+}
+.sidebar {
+  grid-area: s;
+  justify-content: center;
+}
+.main {
+  grid-area: m;
+  justify-content: center;
+}
+.footer {
+  grid-area: f;
+  justify-content: center;
+}
+.menu {
+  justify-content: center;
+}
 /* Do not change the CSS below. */
 
 .header {
